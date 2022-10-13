@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap');
+*{
+    font-family: 'Roboto Slab', serif;
+}
+
+.container{
+    scroll-snap-type: none;
+width: 100%;
+padding: 0 10%;
+}
+h1{
+    font-size: 55px;
+}
+main{
+display: flex;
+justify-content: space-between;
+}
+section{
+width: 45%;
+align-self: center;
+}
+article{
+    padding: 10px 0;
+    font-size: 24px;
+    width: 100%;
+}
+
+.shadow{
+background-color: #EFEFEF;
+width: 366px;
+height: 59px;
+border-radius: 50%;
+position: relative;
+top: -30px;
+z-index: -1;
+}
+footer{
+width: 70%;
+display: flex;
+justify-content: space-between;
+margin-top: 20px;
+}
+
+footer>div{
+width: 20%;
+align-self: center;
+}
+
+.info{
+display: block;
+
+margin: 0;
+}
+.work-proc{
+font-weight: bold;
+}
+
+                                     /* TABLET */
+@media (max-width:1400px )and (min-width:830px ) {
+   
+        
+    .footer-image{
+        display: none;
+    }
+    h1{
+        font-size: 32px;
+    }
+article{
+    font-size: 14px;
+}
+.main-image>svg{
+    width: 181px;
+height: 181px;
+}
+footer>div{
+    width: 30%;
+    align-self: center;
+    }
+    .shadow{
+        background-color: #EFEFEF;
+        width: 211px;
+        height: 34px;
+        border-radius: 50%;
+        position: relative;
+        top: -25px;
+        z-index: -1;
+        }
+} 
+
+
+
+                                    /* PHONE */
+@media (max-width:830px ){
+    .footer-image{
+        display: none;
+    }
+main{
+flex-direction: column;
+}
+.main-article{
+width: 100%;
+}
+.shadow{
+width:170px;
+height: 28px;
+top: -15px;
+}
+h1{
+    font-size: 26px;
+}
+article{
+    font-size: 12px;
+}
+
+.main-image>svg{
+    width: 146px;
+height: 146px;
+}
+footer{
+flex-wrap: wrap;
+}
+footer>div{
+    width: 50%;
+    align-self: center;
+    }
+.info{
+    font-size: 10px;
+}
+.work-proc{
+    font-size: 12px;
+}
+
+}
